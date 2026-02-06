@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OptiPlan — פלטפורמה אחת. כל הפרויקטים. כל הנתונים.</title>
+  <meta name="description" content="OptiPlan - Unified infrastructure project management for Israeli engineering firms">
+
+  <!-- FOUC prevention: apply saved theme before paint -->
+  <script>
+    (function(){var t=localStorage.getItem('optiplan-theme');
+    if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand">
+        <img src="assets/logo.png" alt="OptiPlan" class="nav-logo">
+        <span class="nav-brand-text">OptiPlan</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#vision" data-i18n="nav.vision">החזון</a></li>
+        <li><a href="#products" data-i18n="nav.products">המוצרים</a></li>
+        <li><a href="#personas" data-i18n="nav.personas">למי מיועד</a></li>
+        <li><a href="#numbers" data-i18n="nav.numbers">השוק</a></li>
+        <li><a href="#roadmap" data-i18n="nav.roadmap">המסלול</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">צור קשר</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i data-lucide="moon" class="theme-icon-dark"></i>
+          <i data-lucide="sun" class="theme-icon-light" style="display:none"></i>
+        </button>
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="he">עב</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="OptiPlan Logo" class="hero-logo">
+      <h1 class="hero-title" data-i18n="hero.title">פלטפורמה אחת.<br>כל הפרויקטים.<br>כל הנתונים.</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">מערכת ניהול פרויקטי תשתית משולבת לחברות הנדסה בישראל — מעקב תיאומים, מסמכים, סיכונים, לוחות זמנים וניהול עסקי תחת קורת גג אחת.</p>
+      <a href="#products" class="hero-cta" data-i18n="hero.cta">גלה את המוצרים</a>
+    </div>
+    <div class="scroll-indicator">
+      <i data-lucide="chevrons-down"></i>
+    </div>
+  </section>
+
+  <!-- Wave divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="var(--color-bg-dark)"/>
+    </svg>
+  </div>
+
+  <!-- ========== VISION ========== -->
+  <section class="section section-dark" id="vision">
+    <div class="section-grain"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="vision.label">החזון</span>
+        <h2 data-i18n="vision.title">הבעיה שאנחנו פותרים</h2>
+      </div>
+
+      <div class="vision-grid">
+        <div class="vision-content reveal-right">
+          <p data-i18n="vision.p1">חברות הנדסה המנהלות פרויקטי תשתית גדולים בישראל — כמו הקו הירוק של הרכבת הקלה — מתמודדות עם מציאות של כלים מפוצלים, תהליכים ידניים ועשרות בעלי עניין.</p>
+          <p data-i18n="vision.p2">תיאום מול 61+ גופים מאשרים, מעקב אישורים בגיליונות אקסל, תקשורת בוואטסאפ, ואין תמונה אחת שלמה של מצב הפרויקט. זה מוביל לעיכובים, חשיפה כספית ואובדן שליטה.</p>
+
+          <div class="vision-stats stagger-in">
+            <div class="vision-stat glass-card">
+              <span class="stat-number" data-count="61" data-suffix="+">0+</span>
+              <span class="stat-label" data-i18n="stat.authorities">גופים מאשרים</span>
+            </div>
+            <div class="vision-stat glass-card">
+              <span class="stat-number" data-count="8">0</span>
+              <span class="stat-label" data-i18n="stat.products">מוצרים מאוחדים</span>
+            </div>
+            <div class="vision-stat glass-card">
+              <span class="stat-number" data-count="42">0</span>
+              <span class="stat-label" data-i18n="stat.entities">ישויות נתונים</span>
+            </div>
+            <div class="vision-stat glass-card">
+              <span class="stat-number" data-count="74" data-prefix="~">~0</span>
+              <span class="stat-label" data-i18n="stat.pages">עמודים במערכת</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-box reveal-left glass-card">
+          <div class="comparison-header">
+            <div class="comparison-side before">
+              <h4 data-i18n="compare.before">לפני — המצב הקיים</h4>
+            </div>
+            <div class="comparison-side after">
+              <h4 data-i18n="compare.after">אחרי — OptiPlan</h4>
+            </div>
+          </div>
+          <div class="comparison-body">
+            <ul class="comparison-list before" data-mobile-label-before="&#x2716; לפני — המצב הקיים">
+              <li><i data-lucide="x" class="compare-icon compare-icon-bad"></i><span data-i18n="compare.b1">גיליונות אקסל מרובים ללא קישור</span></li>
+              <li><i data-lucide="x" class="compare-icon compare-icon-bad"></i><span data-i18n="compare.b2">תקשורת בוואטסאפ ומיילים</span></li>
+              <li><i data-lucide="x" class="compare-icon compare-icon-bad"></i><span data-i18n="compare.b3">אין תמונה מלאה של מצב הפרויקט</span></li>
+              <li><i data-lucide="x" class="compare-icon compare-icon-bad"></i><span data-i18n="compare.b4">מעקב ידני מול עשרות גופים</span></li>
+              <li><i data-lucide="x" class="compare-icon compare-icon-bad"></i><span data-i18n="compare.b5">מידע מפוזר בין מערכות נפרדות</span></li>
+            </ul>
+            <ul class="comparison-list after" data-mobile-label-after="&#x2714; אחרי — OptiPlan">
+              <li><i data-lucide="check" class="compare-icon compare-icon-good"></i><span data-i18n="compare.a1">מטריצת אישורים אינטראקטיבית</span></li>
+              <li><i data-lucide="check" class="compare-icon compare-icon-good"></i><span data-i18n="compare.a2">מעקב משימות חכם עם קידוד אוטומטי</span></li>
+              <li><i data-lucide="check" class="compare-icon compare-icon-good"></i><span data-i18n="compare.a3">דשבורד מאוחד לכל הפרויקטים</span></li>
+              <li><i data-lucide="check" class="compare-icon compare-icon-good"></i><span data-i18n="compare.a4">ניהול סיכונים ולוחות זמנים משולב</span></li>
+              <li><i data-lucide="check" class="compare-icon compare-icon-good"></i><span data-i18n="compare.a5">תזרים מזומנים ותכנון עסקי</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS ========== -->
+  <section class="section section-medium" id="products">
+    <div class="section-grain"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="products.label">המוצרים</span>
+        <h2 data-i18n="products.title">שישה מוצרים. פלטפורמה אחת.</h2>
+        <p data-i18n="products.subtitle">כל מוצר מטפל בתחום ייעודי, אך כולם חולקים נתונים, הרשאות ותשתית משותפת.</p>
+      </div>
+
+      <div class="products-grid stagger-in">
+
+        <!-- OptiTrack — bento-large -->
+        <div class="product-card bento-large glass-card reveal">
+          <div class="product-icon">
+            <i data-lucide="layout-grid"></i>
+          </div>
+          <h3 data-i18n="optitrack.name">אופטיטראק</h3>
+          <span class="product-name-en" data-i18n="optitrack.subtitle">תיאום תשתיות</span>
+          <p data-i18n="optitrack.desc">מעקב סטטוס אישורים מול 61+ גופים מאשרים בכל שלב ומקטע בפרויקט.</p>
+          <ul class="product-features">
+            <li data-i18n="optitrack.f1">מטריצת אישורים (גופים × מקטעים × שלבים)</li>
+            <li data-i18n="optitrack.f2">61 גופים מאשרים מוגדרים מראש</li>
+            <li data-i18n="optitrack.f3">ייבוא מערכת מת״ל הארצית</li>
+            <li data-i18n="optitrack.f4">קידוד משימות חכם אוטומטי</li>
+          </ul>
+          <div class="expand-hint"><i data-lucide="chevron-down"></i></div>
+          <div class="product-detail">
+            <div class="mini-prototype">
+              <table class="permit-matrix" dir="rtl">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>A1</th>
+                    <th>A2</th>
+                    <th>A3</th>
+                    <th>A4</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>חברת חשמל</th>
+                    <td class="status-approved">מאושר</td>
+                    <td class="status-submitted">נשלח</td>
+                    <td class="status-approved">מאושר</td>
+                    <td class="status-pending">ממתין</td>
+                  </tr>
+                  <tr>
+                    <th>בזק</th>
+                    <td class="status-approved">מאושר</td>
+                    <td class="status-approved">מאושר</td>
+                    <td class="status-objection">התנגדות</td>
+                    <td class="status-not-submitted">טרם הוגש</td>
+                  </tr>
+                  <tr>
+                    <th>מקורות</th>
+                    <td class="status-submitted">נשלח</td>
+                    <td class="status-pending">ממתין</td>
+                    <td class="status-approved">מאושר</td>
+                    <td class="status-submitted">נשלח</td>
+                  </tr>
+                  <tr>
+                    <th>נת"ע</th>
+                    <td class="status-approved">מאושר</td>
+                    <td class="status-approved">מאושר</td>
+                    <td class="status-submitted">נשלח</td>
+                    <td class="status-approved">מאושר</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- OptiDocs -->
+        <div class="product-card glass-card reveal">
+          <div class="product-icon">
+            <i data-lucide="file-text"></i>
+          </div>
+          <h3 data-i18n="optidocs.name">אופטידוקס</h3>
+          <span class="product-name-en" data-i18n="optidocs.subtitle">ניהול מסמכים</span>
+          <p data-i18n="optidocs.desc">ניהול משימות עם ניתוח מיילים בינה מלאכותית, מכתבים רשמיים עם מספור אוטומטי, וסיכומי ישיבות.</p>
+          <ul class="product-features">
+            <li data-i18n="optidocs.f1">משימות עם ניתוח מיילים חכם</li>
+            <li data-i18n="optidocs.f2">מכתבים עם קוד ייחוס ושרשור</li>
+            <li data-i18n="optidocs.f3">סיכומי ישיבות עם חילוץ משימות</li>
+            <li data-i18n="optidocs.f4">ייצוא ל-PDF ואקסל</li>
+          </ul>
+          <div class="expand-hint"><i data-lucide="chevron-down"></i></div>
+          <div class="product-detail">
+            <div class="mini-prototype">
+              <div class="letter-card">
+                <div class="letter-ref">2026/02/C1/OUT0001</div>
+                <div class="letter-meta">
+                  <span>נמען: חברת חשמל לישראל</span>
+                  <span class="badge badge-sent">נשלח</span>
+                </div>
+                <div class="letter-subject">בקשת תיאום תשתיות — מקטע A2 שלב מבנה תחתון</div>
+                <div class="letter-meta" style="margin-top:8px;">
+                  <span>תאריך: 06/02/2026</span>
+                  <span>מאת: מהנדס מאור ד.</span>
+                </div>
+              </div>
+              <div class="letter-card" style="margin-top:8px;">
+                <div class="letter-ref">2026/02/C1/IN0001</div>
+                <div class="letter-meta">
+                  <span>שולח: חברת חשמל לישראל</span>
+                  <span class="badge badge-final">סופי</span>
+                </div>
+                <div class="letter-subject">תשובה לבקשת תיאום — אישור עקרוני</div>
+                <div class="letter-meta" style="margin-top:8px;">
+                  <span>תאריך: 10/02/2026</span>
+                  <span>תגובה ל: OUT0001</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OptiRisk -->
+        <div class="product-card glass-card reveal">
+          <div class="product-icon">
+            <i data-lucide="triangle-alert"></i>
+          </div>
+          <h3 data-i18n="optirisk.name">אופטיריסק</h3>
+          <span class="product-name-en" data-i18n="optirisk.subtitle">ניהול סיכונים</span>
+          <p data-i18n="optirisk.desc">מרשם סיכונים עם דירוג, מגמות, מעקב טיפול וייבוא/ייצוא CSV.</p>
+          <ul class="product-features">
+            <li data-i18n="optirisk.f1">דשבורד סיכונים מקיף</li>
+            <li data-i18n="optirisk.f2">מעקב מגמות (עולה/יורד/יציב)</li>
+            <li data-i18n="optirisk.f3">משימות טיפול מקושרות</li>
+            <li data-i18n="optirisk.f4">סיכומי AI חכמים</li>
+          </ul>
+          <div class="expand-hint"><i data-lucide="chevron-down"></i></div>
+          <div class="product-detail">
+            <div class="mini-prototype">
+              <div class="risk-card">
+                <div class="risk-header">
+                  <span class="risk-name">עיכוב באישור חח"י — מקטע A2</span>
+                  <span class="badge badge-sent" style="background:var(--color-danger-bg);color:var(--color-danger)">גבוה</span>
+                </div>
+                <div class="risk-level-bar risk-level-high"></div>
+                <div class="risk-footer">
+                  <span>אחראי: אבי כהן</span>
+                  <span class="trend-up"><i data-lucide="trending-up" class="trend-icon"></i> מגמה עולה</span>
+                </div>
+              </div>
+              <div class="risk-card">
+                <div class="risk-header">
+                  <span class="risk-name">חריגת לוח זמנים — OptiGantt</span>
+                  <span class="badge" style="background:var(--color-warning-bg);color:var(--color-warning)">בינוני</span>
+                </div>
+                <div class="risk-level-bar risk-level-medium"></div>
+                <div class="risk-footer">
+                  <span>אחראי: דנה לוי</span>
+                  <span class="trend-stable"><i data-lucide="minus" class="trend-icon"></i> יציב</span>
+                </div>
+              </div>
+              <div class="risk-card">
+                <div class="risk-header">
+                  <span class="risk-name">שינוי דרישות ספק — OptiBiz</span>
+                  <span class="badge" style="background:var(--color-success-bg);color:var(--color-success)">נמוך</span>
+                </div>
+                <div class="risk-level-bar risk-level-low"></div>
+                <div class="risk-footer">
+                  <span>אחראי: יוסי מזרחי</span>
+                  <span class="trend-down"><i data-lucide="trending-down" class="trend-icon"></i> יורד</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OptiGantt -->
+        <div class="product-card glass-card reveal">
+          <div class="product-icon">
+            <i data-lucide="gantt-chart"></i>
+          </div>
+          <h3 data-i18n="optigantt.name">אופטיגנט</h3>
+          <span class="product-name-en" data-i18n="optigantt.subtitle">ניהול לוח זמנים</span>
+          <p data-i18n="optigantt.desc">תרשימי גנט עם ייבוא MS Project, 4 סוגי תלויות, ומסלול קריטי.</p>
+          <ul class="product-features">
+            <li data-i18n="optigantt.f1">ייבוא קבצי MS Project (MPP)</li>
+            <li data-i18n="optigantt.f2">4 סוגי תלויות (FS/FF/SS/SF)</li>
+            <li data-i18n="optigantt.f3">חישוב מסלול קריטי</li>
+            <li data-i18n="optigantt.f4">תצוגה מפוצלת (רשימה + גנט)</li>
+          </ul>
+          <div class="expand-hint"><i data-lucide="chevron-down"></i></div>
+          <div class="product-detail">
+            <div class="mini-prototype">
+              <div class="gantt-mini">
+                <div class="gantt-row">
+                  <span class="gantt-label">תכנון ראשוני</span>
+                  <div class="gantt-track">
+                    <div class="gantt-bar gantt-bar-1" style="left:0%;width:35%"></div>
+                  </div>
+                </div>
+                <div class="gantt-row">
+                  <span class="gantt-label">עבודות חפירה</span>
+                  <div class="gantt-track">
+                    <div class="gantt-bar gantt-bar-2" style="left:20%;width:40%"></div>
+                  </div>
+                </div>
+                <div class="gantt-row">
+                  <span class="gantt-label">תשתיות חשמל</span>
+                  <div class="gantt-track">
+                    <div class="gantt-bar gantt-bar-3" style="left:45%;width:30%"></div>
+                  </div>
+                </div>
+                <div class="gantt-row">
+                  <span class="gantt-label">בדיקות ואישורים</span>
+                  <div class="gantt-track">
+                    <div class="gantt-bar gantt-bar-4" style="left:65%;width:25%"></div>
+                  </div>
+                </div>
+                <div class="gantt-row">
+                  <span class="gantt-label">מסירה</span>
+                  <div class="gantt-track">
+                    <div class="gantt-bar gantt-bar-5" style="left:85%;width:15%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OptiBiz -->
+        <div class="product-card glass-card reveal">
+          <div class="product-icon">
+            <i data-lucide="banknote"></i>
+          </div>
+          <h3 data-i18n="optibiz.name">אופטיביז</h3>
+          <span class="product-name-en" data-i18n="optibiz.subtitle">ניהול עסקי</span>
+          <p data-i18n="optibiz.desc">תכנון תזרים מזומנים, לקוחות, עובדים, הצעות מחיר עם AI, חוזים ודיווח שעות.</p>
+          <ul class="product-features">
+            <li data-i18n="optibiz.f1">תכנון תזרים 12 חודשים</li>
+            <li data-i18n="optibiz.f2">תכנון מול ביצוע</li>
+            <li data-i18n="optibiz.f3">הצעות מחיר בסיוע AI</li>
+            <li data-i18n="optibiz.f4">דיווח שעות ומעקב הוצאות</li>
+          </ul>
+          <div class="expand-hint"><i data-lucide="chevron-down"></i></div>
+          <div class="product-detail">
+            <div class="mini-prototype">
+              <table class="cashflow-grid" dir="rtl">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>ינו׳</th>
+                    <th>פבר׳</th>
+                    <th>מרץ</th>
+                    <th>אפר׳</th>
+                    <th>מאי</th>
+                    <th>יוני</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="row-label">הכנסות</td>
+                    <td class="cashflow-positive">₪85K</td>
+                    <td class="cashflow-positive">₪120K</td>
+                    <td class="cashflow-positive">₪95K</td>
+                    <td class="cashflow-positive">₪110K</td>
+                    <td class="cashflow-positive">₪140K</td>
+                    <td class="cashflow-positive">₪130K</td>
+                  </tr>
+                  <tr>
+                    <td class="row-label">הוצאות</td>
+                    <td class="cashflow-negative">₪72K</td>
+                    <td class="cashflow-negative">₪88K</td>
+                    <td class="cashflow-negative">₪91K</td>
+                    <td class="cashflow-negative">₪78K</td>
+                    <td class="cashflow-negative">₪95K</td>
+                    <td class="cashflow-negative">₪82K</td>
+                  </tr>
+                  <tr class="net-row">
+                    <td class="row-label">נטו</td>
+                    <td class="cashflow-positive">₪13K</td>
+                    <td class="cashflow-positive">₪32K</td>
+                    <td class="cashflow-positive">₪4K</td>
+                    <td class="cashflow-positive">₪32K</td>
+                    <td class="cashflow-positive">₪45K</td>
+                    <td class="cashflow-positive">₪48K</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hub — bento-wide -->
+        <div class="product-card bento-wide glass-card reveal">
+          <div class="product-icon">
+            <i data-lucide="monitor"></i>
+          </div>
+          <h3 data-i18n="hub.name">דשבורד מאוחד</h3>
+          <span class="product-name-en" data-i18n="hub.subtitle">מרכז שליטה</span>
+          <p data-i18n="hub.desc">דשבורד מרכזי שמאגד מדדים מכל המוצרים — תמונת מצב מלאה בלחיצה.</p>
+          <ul class="product-features">
+            <li data-i18n="hub.f1">אגרגציה מכל המוצרים</li>
+            <li data-i18n="hub.f2">סינון לפי פרויקט או חוצה-פרויקטים</li>
+            <li data-i18n="hub.f3">סטטיסטיקות בזמן אמת</li>
+            <li data-i18n="hub.f4">ניווט מאוחד לכל המוצרים</li>
+          </ul>
+          <div class="expand-hint"><i data-lucide="chevron-down"></i></div>
+          <div class="product-detail">
+            <div class="mini-prototype">
+              <div class="hub-stats">
+                <div class="hub-stat">
+                  <span class="hub-stat-number">187</span>
+                  <span class="hub-stat-label">סה"כ אישורים</span>
+                </div>
+                <div class="hub-stat">
+                  <span class="hub-stat-number">124</span>
+                  <span class="hub-stat-label">מאושרים</span>
+                </div>
+                <div class="hub-stat">
+                  <span class="hub-stat-number">48</span>
+                  <span class="hub-stat-label">ממתינים</span>
+                </div>
+                <div class="hub-stat">
+                  <span class="hub-stat-number">15</span>
+                  <span class="hub-stat-label">סיכונים פתוחים</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PERSONAS ========== -->
+  <section class="section section-dark" id="personas">
+    <div class="section-grain"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="personas.label">למי זה מיועד</span>
+        <h2 data-i18n="personas.title">בנוי עבור כל בעל תפקיד בפרויקט</h2>
+        <p data-i18n="personas.subtitle">מתאם תשתיות, מנהלת פרויקט או מנכ"ל — OptiPlan נותן לכל אחד בדיוק מה שהוא צריך.</p>
+      </div>
+
+      <div class="personas-grid stagger-in">
+
+        <!-- Nir -->
+        <div class="persona-card glass-card">
+          <div class="persona-header">
+            <div class="persona-icon"><i data-lucide="hard-hat"></i></div>
+            <div class="persona-info">
+              <h4 data-i18n="persona.nir.name">ניר</h4>
+              <span class="persona-role" data-i18n="persona.nir.role">מתאם תשתיות</span>
+            </div>
+            <span class="persona-badge persona-badge-primary" data-i18n="persona.badge.primary">משתמש עיקרי</span>
+          </div>
+          <p class="persona-pain"><i data-lucide="x-circle" class="persona-pain-icon"></i><span data-i18n="persona.nir.pain">20 דקות למצוא תשובה על סטטוס מקטע — בין 5 קבצי אקסל</span></p>
+          <p class="persona-gain"><i data-lucide="check-circle" class="persona-gain-icon"></i><span data-i18n="persona.nir.gain">לחיצה אחת על הדשבורד — כל האישורים, כל הגופים, בזמן אמת</span></p>
+        </div>
+
+        <!-- Dana -->
+        <div class="persona-card glass-card">
+          <div class="persona-header">
+            <div class="persona-icon"><i data-lucide="clipboard-list"></i></div>
+            <div class="persona-info">
+              <h4 data-i18n="persona.dana.name">דנה</h4>
+              <span class="persona-role" data-i18n="persona.dana.role">מנהלת פרויקט</span>
+            </div>
+            <span class="persona-badge persona-badge-primary" data-i18n="persona.badge.primary">משתמש עיקרי</span>
+          </div>
+          <p class="persona-pain"><i data-lucide="x-circle" class="persona-pain-icon"></i><span data-i18n="persona.dana.pain">שעות עד ימים להבין את ההשפעה של אישור שנדחה</span></p>
+          <p class="persona-gain"><i data-lucide="check-circle" class="persona-gain-icon"></i><span data-i18n="persona.dana.gain">המערכת מציגה מיד: לוח זמנים, סיכונים, תזרים — הכל מקושר</span></p>
+        </div>
+
+        <!-- Avi -->
+        <div class="persona-card glass-card">
+          <div class="persona-header">
+            <div class="persona-icon"><i data-lucide="calculator"></i></div>
+            <div class="persona-info">
+              <h4 data-i18n="persona.avi.name">אבי</h4>
+              <span class="persona-role" data-i18n="persona.avi.role">מנהל כספים</span>
+            </div>
+            <span class="persona-badge persona-badge-primary" data-i18n="persona.badge.primary">משתמש עיקרי</span>
+          </div>
+          <p class="persona-pain"><i data-lucide="x-circle" class="persona-pain-icon"></i><span data-i18n="persona.avi.pain">יום שלם לאיחוד תזרים — נוסחאות שבורות באקסל</span></p>
+          <p class="persona-gain"><i data-lucide="check-circle" class="persona-gain-icon"></i><span data-i18n="persona.avi.gain">תזרים מזומנים בזמן אמת, מסונכרן אוטומטית מאבני דרך</span></p>
+        </div>
+
+        <!-- Rami -->
+        <div class="persona-card glass-card">
+          <div class="persona-header">
+            <div class="persona-icon"><i data-lucide="briefcase"></i></div>
+            <div class="persona-info">
+              <h4 data-i18n="persona.rami.name">רמי</h4>
+              <span class="persona-role" data-i18n="persona.rami.role">בעל החברה / מנכ"ל</span>
+            </div>
+            <span class="persona-badge persona-badge-secondary" data-i18n="persona.badge.decision">מקבל החלטות</span>
+          </div>
+          <p class="persona-pain"><i data-lucide="x-circle" class="persona-pain-icon"></i><span data-i18n="persona.rami.pain">מידע מהשבוע שעבר — מגלה בעיות רק כשהן כבר משבר</span></p>
+          <p class="persona-gain"><i data-lucide="check-circle" class="persona-gain-icon"></i><span data-i18n="persona.rami.gain">דשבורד בנייד עם בריאות תיק הפרויקטים — בזמן אמת</span></p>
+        </div>
+
+        <!-- Yael -->
+        <div class="persona-card glass-card">
+          <div class="persona-header">
+            <div class="persona-icon"><i data-lucide="building-2"></i></div>
+            <div class="persona-info">
+              <h4 data-i18n="persona.yael.name">יעל</h4>
+              <span class="persona-role" data-i18n="persona.yael.role">בעלת עניין חיצונית</span>
+            </div>
+            <span class="persona-badge persona-badge-secondary" data-i18n="persona.badge.stakeholder">בעלת עניין</span>
+          </div>
+          <p class="persona-pain"><i data-lucide="x-circle" class="persona-pain-icon"></i><span data-i18n="persona.yael.pain">מתאמים מתקשרים שוב ושוב — אין לה הקשר על הפרויקט</span></p>
+          <p class="persona-gain"><i data-lucide="check-circle" class="persona-gain-icon"></i><span data-i18n="persona.yael.gain">דשבורד צד שלישי — רואה רק מה שרלוונטי, בלי חשבון</span></p>
+        </div>
+
+        <!-- Tamir -->
+        <div class="persona-card glass-card">
+          <div class="persona-header">
+            <div class="persona-icon"><i data-lucide="landmark"></i></div>
+            <div class="persona-info">
+              <h4 data-i18n="persona.tamir.name">תמיר</h4>
+              <span class="persona-role" data-i18n="persona.tamir.role">יזם</span>
+            </div>
+            <span class="persona-badge persona-badge-secondary" data-i18n="persona.badge.sponsor">מזמין העבודה</span>
+          </div>
+          <p class="persona-pain"><i data-lucide="x-circle" class="persona-pain-icon"></i><span data-i18n="persona.tamir.pain">דוחות חודשיים מנופחים — חושד שמסתירים ממנו בעיות</span></p>
+          <p class="persona-gain"><i data-lucide="check-circle" class="persona-gain-icon"></i><span data-i18n="persona.tamir.gain">גישה ישירה לסטטוס — אותו מידע שרואה צוות הניהול</span></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRANSFORMATION ========== -->
+  <section class="section section-medium" id="transformation">
+    <div class="section-grain"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="transform.label">השינוי</span>
+        <h2 data-i18n="transform.title">מ-20 דקות למיידי</h2>
+        <p data-i18n="transform.subtitle">כך OptiPlan משנה את יום העבודה — מדדים אמיתיים, לא הבטחות.</p>
+      </div>
+
+      <div class="transform-grid stagger-in">
+
+        <!-- Metric 1: Status query -->
+        <div class="transform-card glass-card">
+          <div class="transform-metric">
+            <div class="transform-before">
+              <span class="transform-value transform-value-before" data-i18n="transform.m1.before">~20 דקות</span>
+              <span class="transform-desc" data-i18n="transform.m1.before_desc">לחפש סטטוס מקטע</span>
+            </div>
+            <div class="transform-arrow"><i data-lucide="arrow-left"></i></div>
+            <div class="transform-after">
+              <span class="transform-value transform-value-after" data-i18n="transform.m1.after">מיידי</span>
+              <span class="transform-desc" data-i18n="transform.m1.after_desc">לחיצה אחת על הדשבורד</span>
+            </div>
+          </div>
+          <span class="transform-label" data-i18n="transform.m1.label">שאילתת סטטוס</span>
+        </div>
+
+        <!-- Metric 2: Crisis assessment -->
+        <div class="transform-card glass-card">
+          <div class="transform-metric">
+            <div class="transform-before">
+              <span class="transform-value transform-value-before" data-i18n="transform.m2.before">שעות עד ימים</span>
+              <span class="transform-desc" data-i18n="transform.m2.before_desc">לאתר את כל ההשלכות</span>
+            </div>
+            <div class="transform-arrow"><i data-lucide="arrow-left"></i></div>
+            <div class="transform-after">
+              <span class="transform-value transform-value-after" data-i18n="transform.m2.after">דקות</span>
+              <span class="transform-desc" data-i18n="transform.m2.after_desc">המערכת מציגה מפת השפעה</span>
+            </div>
+          </div>
+          <span class="transform-label" data-i18n="transform.m2.label">הערכת משבר</span>
+        </div>
+
+        <!-- Metric 3: Meeting to tasks -->
+        <div class="transform-card glass-card">
+          <div class="transform-metric">
+            <div class="transform-before">
+              <span class="transform-value transform-value-before" data-i18n="transform.m3.before">ידני, הולך לאיבוד</span>
+              <span class="transform-desc" data-i18n="transform.m3.before_desc">משימות נשכחות אחרי ישיבות</span>
+            </div>
+            <div class="transform-arrow"><i data-lucide="arrow-left"></i></div>
+            <div class="transform-after">
+              <span class="transform-value transform-value-after" data-i18n="transform.m3.after">חילוץ AI אוטומטי</span>
+              <span class="transform-desc" data-i18n="transform.m3.after_desc">12 משימות נוצרו מסיכום ישיבה</span>
+            </div>
+          </div>
+          <span class="transform-label" data-i18n="transform.m3.label">מישיבה למשימות</span>
+        </div>
+
+        <!-- Metric 4: Cashflow -->
+        <div class="transform-card glass-card">
+          <div class="transform-metric">
+            <div class="transform-before">
+              <span class="transform-value transform-value-before" data-i18n="transform.m4.before">יום שלם, פעם בחודש</span>
+              <span class="transform-desc" data-i18n="transform.m4.before_desc">איחוד ידני של גיליונות</span>
+            </div>
+            <div class="transform-arrow"><i data-lucide="arrow-left"></i></div>
+            <div class="transform-after">
+              <span class="transform-value transform-value-after" data-i18n="transform.m4.after">בזמן אמת</span>
+              <span class="transform-desc" data-i18n="transform.m4.after_desc">מסונכרן אוטומטית מאבני דרך</span>
+            </div>
+          </div>
+          <span class="transform-label" data-i18n="transform.m4.label">התאמת תזרים</span>
+        </div>
+
+        <!-- Metric 5: Portfolio visibility -->
+        <div class="transform-card glass-card">
+          <div class="transform-metric">
+            <div class="transform-before">
+              <span class="transform-value transform-value-before" data-i18n="transform.m5.before">דוחות שבועיים</span>
+              <span class="transform-desc" data-i18n="transform.m5.before_desc">מידע שכבר לא רלוונטי</span>
+            </div>
+            <div class="transform-arrow"><i data-lucide="arrow-left"></i></div>
+            <div class="transform-after">
+              <span class="transform-value transform-value-after" data-i18n="transform.m5.after">דשבורד בנייד</span>
+              <span class="transform-desc" data-i18n="transform.m5.after_desc">תיק פרויקטים חי — בכל מקום</span>
+            </div>
+          </div>
+          <span class="transform-label" data-i18n="transform.m5.label">נראות תיק פרויקטים</span>
+        </div>
+
+        <!-- Metric 6: Onboarding -->
+        <div class="transform-card glass-card">
+          <div class="transform-metric">
+            <div class="transform-before">
+              <span class="transform-value transform-value-before" data-i18n="transform.m6.before">שבועות</span>
+              <span class="transform-desc" data-i18n="transform.m6.before_desc">ידע מוסדי הולך לאיבוד</span>
+            </div>
+            <div class="transform-arrow"><i data-lucide="arrow-left"></i></div>
+            <div class="transform-after">
+              <span class="transform-value transform-value-after" data-i18n="transform.m6.after">ימים</span>
+              <span class="transform-desc" data-i18n="transform.m6.after_desc">הזיכרון הארגוני במערכת</span>
+            </div>
+          </div>
+          <span class="transform-label" data-i18n="transform.m6.label">קליטת עובד חדש</span>
+        </div>
+
+      </div>
+
+      <div class="transform-quote reveal">
+        <blockquote data-i18n="transform.quote">"לפני OptiPlan, זה היה שבוע של כיבוי שריפות."</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NUMBERS ========== -->
+  <section class="section section-dark" id="numbers">
+    <div class="section-grain"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="numbers.label">הזדמנות</span>
+        <h2 data-i18n="numbers.title">השוק מחכה לפתרון</h2>
+        <p data-i18n="numbers.subtitle">שוק ההנדסה האזרחית בישראל חסר פלטפורמה מאוחדת — עד עכשיו.</p>
+      </div>
+
+      <div class="numbers-grid stagger-in">
+        <div class="number-card glass-card">
+          <span class="number-value counter-animated" data-count="200" data-suffix="B">0</span>
+          <span class="number-label" data-i18n="num.market">₪ פרויקטי הנדסה אזרחית בשנה</span>
+        </div>
+        <div class="number-card glass-card">
+          <span class="number-value counter-animated" data-count="20" data-suffix="B">0</span>
+          <span class="number-label" data-i18n="num.addressable">₪ תכנון וניהול — השוק שלנו</span>
+        </div>
+        <div class="number-card glass-card">
+          <span class="number-value counter-animated" data-count="3">0</span>
+          <span class="number-label" data-i18n="num.pillars">עולמות בפלטפורמה אחת</span>
+        </div>
+        <div class="number-card glass-card">
+          <span class="number-value counter-animated" data-count="0">0</span>
+          <span class="number-label" data-i18n="num.competitors">מתחרים שמכסים את כולם</span>
+        </div>
+      </div>
+
+      <!-- Three Pillars -->
+      <div class="pillars-visual reveal">
+        <div class="pillars-row">
+          <div class="pillar-item glass-card">
+            <div class="pillar-icon"><i data-lucide="hard-hat"></i></div>
+            <h4 data-i18n="pillar.eng.title">הנדסי</h4>
+            <span class="pillar-subtitle" data-i18n="pillar.eng.subtitle">Engineering</span>
+            <p data-i18n="pillar.eng.products">OptiTrack · OptiGantt · OptiRisk</p>
+          </div>
+          <div class="pillar-item glass-card">
+            <div class="pillar-icon"><i data-lucide="file-text"></i></div>
+            <h4 data-i18n="pillar.admin.title">מנהלי</h4>
+            <span class="pillar-subtitle" data-i18n="pillar.admin.subtitle">Administrative</span>
+            <p data-i18n="pillar.admin.products">OptiDocs</p>
+          </div>
+          <div class="pillar-item glass-card">
+            <div class="pillar-icon"><i data-lucide="banknote"></i></div>
+            <h4 data-i18n="pillar.fin.title">כספי</h4>
+            <span class="pillar-subtitle" data-i18n="pillar.fin.subtitle">Financial</span>
+            <p data-i18n="pillar.fin.products">OptiBiz</p>
+          </div>
+        </div>
+        <div class="pillar-hub">
+          <div class="pillar-connector"></div>
+          <div class="pillar-hub-badge glass-card">
+            <i data-lucide="monitor"></i>
+            <span data-i18n="pillar.hub">דשבורד מאוחד — מרכז שליטה</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ROADMAP ========== -->
+  <section class="section section-medium" id="roadmap">
+    <div class="section-grain"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="roadmap.label">לאן מגיעים</span>
+        <h2 data-i18n="roadmap.title">מפלטפורמה לאלגוריתם</h2>
+        <p data-i18n="roadmap.subtitle">OptiPlan נבנית כפלטפורמה שהולכת ומשתפרת — ככל שיותר נתונים זורמים, המערכת הופכת חכמה יותר.</p>
+      </div>
+
+      <div class="roadmap-timeline">
+
+        <!-- Phase 1 -->
+        <div class="roadmap-step reveal-right">
+          <div class="roadmap-marker">
+            <span class="roadmap-year">1</span>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="roadmap-content glass-card">
+            <h4 data-i18n="roadmap.y1.title">השקה ופיילוטים</h4>
+            <p data-i18n="roadmap.y1.desc">פלטפורמה מלאה עם כל 6 המוצרים. חברות פיילוט מהרשת הקיימת. הוכחת התאמה לשוק.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag" data-i18n="roadmap.y1.t1">OptiTrack + Hub</span>
+              <span class="roadmap-tag" data-i18n="roadmap.y1.t2">פיילוטים ראשונים</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="roadmap-step reveal-right">
+          <div class="roadmap-marker">
+            <span class="roadmap-year">2</span>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="roadmap-content glass-card">
+            <h4 data-i18n="roadmap.y2.title">צמיחה והאלגוריתם</h4>
+            <p data-i18n="roadmap.y2.desc">הרחבת בסיס הלקוחות. השקת "האלגוריתם" — בינה מלאכותית חוצת-תחומים שמקשרת אישורים, סיכונים, לוחות זמנים ותזרים.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag" data-i18n="roadmap.y2.t1">הרחבת לקוחות</span>
+              <span class="roadmap-tag roadmap-tag-highlight" data-i18n="roadmap.y2.t2">האלגוריתם</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="roadmap-step reveal-right">
+          <div class="roadmap-marker">
+            <span class="roadmap-year">3</span>
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="roadmap-content glass-card">
+            <h4 data-i18n="roadmap.y3.title">מובילות והתרחבות</h4>
+            <p data-i18n="roadmap.y3.desc">ביסוס מובילות בשוק הישראלי. התרחבות בינלאומית לשווקים נוספים. OptiPlan הופכת לסטנדרט בתעשייה.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag" data-i18n="roadmap.y3.t1">התרחבות בינלאומית</span>
+              <span class="roadmap-tag" data-i18n="roadmap.y3.t2">סטנדרט תעשייתי</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Algorithm teaser -->
+      <div class="algorithm-teaser glass-card reveal">
+        <div class="algorithm-header">
+          <div class="algorithm-icon"><i data-lucide="brain"></i></div>
+          <h4 data-i18n="roadmap.algo.title">האלגוריתם — בינה חוצת-תחומים</h4>
+        </div>
+        <p class="algorithm-example" data-i18n="roadmap.algo.example">"עיכוב אישור במקטע A1 מקושר לסיכון #47, משפיע על פריט לו"ז #312 — השפעה משוערת על תזרים: 1.2 מיליון ₪"</p>
+        <p class="algorithm-desc" data-i18n="roadmap.algo.desc">ככל שיותר נתוני פרויקט זורמים במערכת, הקישורים בין התחומים הופכים לבינה שאין לשחזר בשום כלי אחר.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA / CONTACT ========== -->
+  <section class="cta-section" id="contact">
+    <div class="container reveal">
+      <h2 data-i18n="cta.title">מוכנים לשנות את ניהול הפרויקטים?</h2>
+      <p data-i18n="cta.subtitle">OptiPlan הולך להפוך את הדרך שחברות הנדסה בישראל מנהלות פרויקטי תשתית.</p>
+      <div class="cta-buttons">
+        <a href="mailto:maor@maord-eng.net" class="btn-primary" data-i18n="cta.primary">צור קשר</a>
+        <a href="#hero" class="btn-secondary" data-i18n="cta.secondary">חזרה למעלה</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="OptiPlan">
+        <span>OptiPlan</span>
+      </div>
+      <p data-i18n="footer.copyright">© 2026 OptiPlan. כל הזכויות שמורות.</p>
+      <div class="footer-domains">
+        <a href="https://optiplan.online">optiplan.online</a>
+        <a href="https://optiplan.co.il">optiplan.co.il</a>
+        <a href="https://optiplan.site">OptiPlan.site</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+
+</body>
+</html>
