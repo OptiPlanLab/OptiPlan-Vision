@@ -52,18 +52,18 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* --- Logo pulse glow --- */
-@keyframes logoPulse {
+/* --- Logo pulse glow (removed - no visible frame) --- */
+/* @keyframes logoPulse {
   0%, 100% {
     filter: drop-shadow(0 8px 24px rgba(91, 155, 213, 0.25));
   }
   50% {
     filter: drop-shadow(0 8px 32px rgba(91, 155, 213, 0.45));
   }
-}
+} */
 
 [data-theme="dark"] .hero-logo {
-  animation: logoEntrance 1.2s ease-out, logoPulse 4s ease-in-out 1.2s infinite;
+  animation: logoEntrance 1.2s ease-out;
 }
 
 /* --- Gradient text shimmer --- */

@@ -8,8 +8,13 @@
 
   <!-- FOUC prevention: apply saved theme before paint -->
   <script>
-    (function(){var t=localStorage.getItem('optiplan-theme');
-    if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})();
+    (function(){
+      var t = localStorage.getItem('optiplan-theme');
+      // Default to dark mode unless the user explicitly set 'light'
+      if (t === 'dark' || t === null || t === undefined) {
+        document.documentElement.setAttribute('data-theme','dark');
+      }
+    })();
   </script>
 
   <!-- Fonts -->

@@ -337,6 +337,7 @@ p {
 .nav-logo {
   width: 42px;
   height: 42px;
+  border-radius: 50%;
 }
 
 [data-theme="dark"] .nav-logo {
@@ -497,11 +498,16 @@ p {
   height: 140px;
   margin: 0 auto 32px;
   animation: logoEntrance 1.2s ease-out;
-  filter: drop-shadow(0 8px 24px rgba(91, 155, 213, 0.25));
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 50%;
 }
 
 [data-theme="dark"] .hero-logo {
-  filter: drop-shadow(0 8px 24px rgba(123, 184, 232, 0.4));
+  /* Remove drop-shadow in dark mode too */
+  filter: none;
 }
 
 @keyframes logoEntrance {
@@ -1511,6 +1517,7 @@ p {
 .footer-brand img {
   width: 28px;
   height: 28px;
+  border-radius: 50%;
 }
 [data-theme="dark"] .footer-brand img {
   filter: drop-shadow(0 0 4px rgba(123, 184, 232, 0.3));
