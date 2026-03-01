@@ -5,7 +5,7 @@
 const translations = {
   // Navigation
   'nav.vision': { he: 'החזון', en: 'Vision' },
-  'nav.products': { he: 'המוצרים', en: 'Products' },
+  'nav.products': { he: 'המודולים', en: 'Modules' },
   'nav.personas': { he: 'למי מיועד', en: 'Users' },
   'nav.numbers': { he: 'השוק', en: 'Market' },
   'nav.roadmap': { he: 'המסלול', en: 'Roadmap' },
@@ -20,7 +20,7 @@ const translations = {
     he: 'מערכת ניהול פרויקטי תשתית משולבת לחברות הנדסה בישראל — מעקב תיאומים, מסמכים, סיכונים, לוחות זמנים וניהול עסקי תחת קורת גג אחת.',
     en: 'Integrated infrastructure project management for Israeli engineering firms — permit coordination, documents, risks, scheduling, and business management under one roof.'
   },
-  'hero.cta': { he: 'גלה את המוצרים', en: 'Explore Products' },
+  'hero.cta': { he: 'גלה את המודולים', en: 'Explore Modules' },
 
   // Vision
   'vision.label': { he: 'החזון', en: 'THE VISION' },
@@ -39,7 +39,7 @@ const translations = {
 
   // Vision stats
   'stat.authorities': { he: 'גופים מאשרים', en: 'Approval Authorities' },
-  'stat.products': { he: 'מוצרים מאוחדים', en: 'Unified Products' },
+  'stat.products': { he: 'פלטפורמה מודולרית אחת', en: 'One Modular Platform' },
   'stat.entities': { he: 'ישויות נתונים', en: 'Data Entities' },
   'stat.pages': { he: 'עמודים במערכת', en: 'Pages in Platform' },
 
@@ -58,16 +58,16 @@ const translations = {
   'compare.a5': { he: 'תזרים מזומנים ותכנון עסקי', en: 'Cash flow & business planning' },
 
   // Products
-  'products.label': { he: 'המוצרים', en: 'THE PRODUCTS' },
-  'products.title': { he: 'שישה מוצרים. פלטפורמה אחת.', en: 'Six Products. One Platform.' },
+  'products.label': { he: 'המודולים', en: 'THE MODULES' },
+  'products.title': { he: 'מודולים רבים. פלטפורמה אחת.', en: 'Multiple Modules. One Platform.' },
   'products.subtitle': {
-    he: 'כל מוצר מטפל בתחום ייעודי, אך כולם חולקים נתונים, הרשאות ותשתית משותפת.',
-    en: 'Each product handles a dedicated domain, yet they all share data, permissions, and infrastructure.'
+    he: 'כל מודול מטפל בתחום ייעודי, אך כולם חולקים נתונים, הרשאות ותשתית משותפת.',
+    en: 'Each module handles a dedicated domain, yet they all share data, permissions, and infrastructure.'
   },
 
   // OptiTrack
   'optitrack.name': { he: 'אופטיטראק', en: 'OptiTrack' },
-  'optitrack.subtitle': { he: 'תיאום תשתיות', en: 'Permit Coordination' },
+  'optitrack.subtitle': { he: 'תיאום תשתיות', en: 'Infrastructure Coordination' },
   'optitrack.desc': {
     he: 'מעקב סטטוס אישורים מול 61+ גופים מאשרים בכל שלב ומקטע בפרויקט.',
     en: 'Track approval status across 61+ infrastructure authorities for each project section and phase.'
@@ -129,13 +129,13 @@ const translations = {
   'hub.name': { he: 'דשבורד מאוחד', en: 'Hub Dashboard' },
   'hub.subtitle': { he: 'מרכז שליטה', en: 'Command Center' },
   'hub.desc': {
-    he: 'דשבורד מרכזי שמאגד מדדים מכל המוצרים — תמונת מצב מלאה בלחיצה.',
-    en: 'Central dashboard aggregating metrics from all products — complete status picture in one click.'
+    he: 'דשבורד מרכזי שמאגד מדדים מכל המודולים — תמונת מצב מלאה בלחיצה.',
+    en: 'Central dashboard aggregating metrics from all modules — complete status picture in one click.'
   },
-  'hub.f1': { he: 'אגרגציה מכל המוצרים', en: 'Aggregation from all products' },
+  'hub.f1': { he: 'אגרגציה מכל המודולים', en: 'Aggregation from all modules' },
   'hub.f2': { he: 'סינון לפי פרויקט או חוצה-פרויקטים', en: 'Filter by project or cross-project' },
   'hub.f3': { he: 'סטטיסטיקות בזמן אמת', en: 'Real-time statistics' },
-  'hub.f4': { he: 'ניווט מאוחד לכל המוצרים', en: 'Unified navigation to all products' },
+  'hub.f4': { he: 'ניווט מאוחד לכל המודולים', en: 'Unified navigation to all modules' },
 
   // Personas
   'personas.label': { he: 'למי זה מיועד', en: 'WHO IT\'S FOR' },
@@ -284,8 +284,8 @@ const translations = {
   },
   'roadmap.y1.title': { he: 'השקה ופיילוטים', en: 'Launch & Pilots' },
   'roadmap.y1.desc': {
-    he: 'פלטפורמה מלאה עם כל 6 המוצרים. חברות פיילוט מהרשת הקיימת. הוכחת התאמה לשוק.',
-    en: 'Full platform with all 6 products. Pilot firms from our existing network. Proving product-market fit.'
+    he: 'פלטפורמה מלאה עם כל המודולים. חברות פיילוט מהרשת הקיימת. הוכחת התאמה לשוק.',
+    en: 'Full platform with all modules. Pilot firms from our existing network. Proving product-market fit.'
   },
   'roadmap.y1.t1': { he: 'OptiTrack + Hub', en: 'OptiTrack + Hub' },
   'roadmap.y1.t2': { he: 'פיילוטים ראשונים', en: 'First Pilots' },

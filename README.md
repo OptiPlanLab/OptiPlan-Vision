@@ -81,16 +81,16 @@ showcase/
 
 OptiPlan unifies the engineering, administrative, and financial dimensions of infrastructure projects into a single command center — replacing the fragmented landscape of spreadsheets, scattered PDFs, and disconnected tools.
 
-**6 products. One platform. Full control.**
+**Multiple modules. One platform. Full control.**
 
-| Product | Domain | What It Does |
-|---------|--------|-------------|
-| **OptiTrack** | Engineering | Permit coordination across 61+ infrastructure authorities |
+| Module | Domain | What It Does |
+|--------|--------|-------------|
+| **OptiTrack** | Engineering | Infrastructure coordination across 61+ authorities — engineering, traffic, licensing, permits, and client controls |
 | **OptiDocs** | Administrative | Task management, formal letters, meeting summaries with AI |
 | **OptiRisk** | Engineering | Risk registry with scoring, trends, and mitigation tracking |
 | **OptiGantt** | Engineering | Project scheduling with MS Project import and critical path |
 | **OptiBiz** | Financial | Cashflow planning, invoicing, proposals, employment management |
-| **Hub Dashboard** | All | Real-time command center aggregating all products |
+| **Hub Dashboard** | All | Real-time command center aggregating all modules |
 
 ## View the Showcase
 
@@ -100,7 +100,7 @@ OptiPlan unifies the engineering, administrative, and financial dimensions of in
 - Hebrew RTL-first with English toggle
 - Light/dark theme
 - Fully responsive (mobile, tablet, desktop)
-- Interactive product mini-prototypes
+- Interactive module mini-prototypes
 - Animated counters and scroll effects
 
 **To view locally:** Open `index.html` in a browser.
